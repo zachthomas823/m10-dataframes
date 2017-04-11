@@ -20,13 +20,13 @@ salaries['got.raise'] <- raise > 0
 # Retrieve values from your data frame to answer the following questions:
 
 # What was the 2015 salary of employee 57
-
+salaries[[2]][57]
 
 # How many employees got a raise?
-
+nrow(salaries[salaries$got.raise == TRUE,])
 
 # What was the value of the highest raise?
-
+ 
 
 # What was the name of the employee who recieved the highest raise?
 
