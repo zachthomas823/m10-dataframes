@@ -45,7 +45,7 @@ high.1960 <- max(set[["X1960"]])
 # Using your function, determine the highest spending category of each year
 high.category <- function(year) {
   full.year <- paste0("x", year)
-  return(max.col(set[[full.year]]))
+  return(max(set[[full.year, "Category"]]))
 }
 
 high.category("1940")
